@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+    <div class="logo">My Portfolio</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-icons">
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <button id="themeToggle"><i class="fas fa-moon"></i></button>
+      <button class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+</header>
+
+  <section id="home" class="section home">
+  <div class="home-content">
+    <img src="MYimage.jpeg" alt="My Photo" class="profile-img" />
+
+    <div class="intro-text">
+      <h1>Hi, I'm <span class="highlight">Pala Peddintlu</span></h1>
+      <h2><span class="typing"></span></h2>
+
+      <p>
+        I'm currently pursuing my B.Tech in Computer Science, and I'm deeply passionate about creating meaningful digital experiences through web development. I enjoy turning complex problems into simple, beautiful, and intuitive designs.
+      </p>
+
+      <p>
+        I have hands-on experience with HTML, CSS, JavaScript, and frameworks like React. I continuously explore new technologies and tools that help me grow as a developer and build more powerful, scalable, and accessible websites.
+      </p>
+
+      <p>
+        My mission is to become a full-stack developer and contribute to real-world projects that create value. I believe in continuous learning and am always ready to take on new challenges and collaborate with creative minds.
+      </p>
+
+      <div class="tech-tags">
+        <span>🌐 HTML5</span>
+        <span>🎨 CSS3</span>
+        <span>⚙️ JavaScript</span>
+        <span>⚛️ React</span>
+        <span>🛠 Git & GitHub</span>
+        <span>📱 Responsive Design</span>
+      </div>
+
+      <div class="home-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="about" class="section">
+  <h2 class="section-title">About <span class="highlight">Me</span></h2>
+  <div class="about-container" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: center;">
+    
+    <div class="about-image">
+      <img src="mypic.jpeg" alt="Pala Peddintlu" class="about-img" style="border-radius: 20px; width: 300px; height: auto; box-shadow: 0 8px 16px rgba(0,0,0,0.2);" />
+    </div>
+
+    <div class="about-text" style="max-width: 600px; text-align: left;">
+      <p><strong>Hello! 👋 I’m Pala Peddintlu,</strong> a final-year B.Tech Computer Science student with a deep enthusiasm for web development and software engineering.</p>
+      <p>I specialize in building dynamic, responsive web applications using technologies like <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>React</strong>. I enjoy transforming ideas into user-friendly interfaces.</p>
+      <p>My passion lies in <strong>problem solving, learning new technologies</strong>, and contributing to projects that make a meaningful impact. I thrive both in solo and team-based environments, always seeking to grow and innovate.</p>
+      <ul style="margin-top: 15px; list-style-type: disc; padding-left: 20px;">
+        <li>📚 Continuous Learner</li>
+        <li>💻 Frontend Developer</li>
+        <li>🚀 Aspiring Full-Stack Engineer</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fab fa-html5"></i>
+        <h3>HTML</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-js-square"></i>
+        <h3>JavaScript</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-react"></i>
+        <h3>React</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-git-alt"></i>
+        <h3>Git</h3>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="project1.jpg" alt="Project 1" />
+        <h3>Project One</h3>
+        <p>A responsive website for showcasing a portfolio using HTML, CSS, and JS.</p>
+        <div class="project-links">
+          <a href="#" target="_blank">View</a>
+        </div>
+      </div>
+  
+      <div class="project-card">
+        <img src="project2.jpg" alt="Project 2" />
+        <h3>Project Two</h3>
+        <p>A weather app using JavaScript that fetches data from an API and displays it in real-time.</p>
+        <div class="project-links">
+         <a href="#" target="_blank">View</a>
+        </div>
+      </div>
+  
+      <div class="project-card">
+        <img src="project3.jpg" alt="Project 3" />
+        <h3>Project Three</h3>
+        <p>A simple to-do list web app with add, delete, and update features.</p>
+        <div class="project-links">
+         <a href="#" target="_blank">View</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+ <section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out for any project or just to say hello!</p>
+  
+  <form class="contact-form" action="https://formspree.io/f/mwpbbpjk" method="POST">
+    <div class="form-group">
+      <i class="fas fa-user"></i>
+      <input type="text" name="name" placeholder="Your Name" required />
+    </div>
+    <div class="form-group">
+      <i class="fas fa-envelope"></i>
+      <input type="email" name="email" placeholder="Your Email" required />
+    </div>
+    <div class="form-group">
+      <i class="fas fa-comment-dots"></i>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
